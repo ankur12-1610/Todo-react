@@ -5,6 +5,9 @@ export const AddTodo = ({addTodo}) => {
     let addTodocss ={
          padding: "14px",
     }
+    let buttoncss = {
+        backgroundcolor: "#53b3cb",
+    }
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
 
@@ -21,7 +24,7 @@ export const AddTodo = ({addTodo}) => {
     return (
         <>
         <div style={addTodocss}>
-            <h3>Add a Todo</h3>
+            <h4 className="my-3">Add a Todo</h4><hr/>
                 <div>
                     <form onSubmit={submit}>
         <div className="mb-3">
@@ -32,7 +35,7 @@ export const AddTodo = ({addTodo}) => {
             <label htmlFor="desc" className="form-label">Todo Decsription</label>
             <input  value={desc} type="text"onChange={(e)=>{setDesc(e.target.value)}} className="form-control" id="desc"/>
         </div>
-        <button type="submit" className="btn btn-success">Add Todo</button>
+        <button type="submit" className="btn btn-info" style={buttoncss}>Add Todo</button>
         </form>
                 </div>
         </div>

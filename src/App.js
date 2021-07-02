@@ -1,10 +1,12 @@
 import "./App.css";
+import "./Group.png"
 import Header from "./MyComponents/Header";
 import { Todos } from "./MyComponents/Todos";
 import { Footer } from "./MyComponents/Footer";
 import { AddTodo } from "./MyComponents/AddTodo";
 import { About } from "./MyComponents/About";
 import React, { useState, useEffect } from 'react';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -51,7 +53,7 @@ function App() {
   return (
     <>
       <Router>
-      <Header title="MyTodosList" serchBar={true} />
+      <Header title="Todos List" serchBar={true} />
       <Switch>
       <Route exact path="/" render= {() => {
         return(

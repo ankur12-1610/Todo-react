@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaAngellist } from "react-icons/fa";
+
 
 export const About = () => {
     let aboutStyle = {
@@ -6,9 +8,9 @@ export const About = () => {
     }
     return (
         <>
-        <figure class="text-center" style = {aboutStyle} >
-  <blockquote class="blockquote">
-    <h2>Hi, I'm Ankur</h2>
+        <figure className="text-center" style = {aboutStyle} >
+  <blockquote className="blockquote">
+    <h2>Hi, I'm Ankur <FaAngellist/></h2>
     <p>      💬 self-taught coder, investor, designer and programmer<br/>
             📙 student at Indian Institute of Technology, BHU, Varanasi<br/>
             🌱 learning Django. React. REST API.<br/>
