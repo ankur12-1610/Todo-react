@@ -1,7 +1,8 @@
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import {FaCheese} from "react-icons/fa";
-import {FaHeart} from "react-icons/fa"
+import {FaHeart} from "react-icons/fa";
+
 
 
 export const Footer = () =>  {
@@ -21,8 +22,8 @@ let font = {
             </div>
             
             <div className="text-center"><p>Made with <FaCheese /> and <FaHeart/></p></div>  
-            <div className="text-center"><p>For code, visit github repo <a href="https://github.com/ankur12-1610/Todo-react" target="_blank"><FaGithub color="#53b3cb"/></a></p></div>
-            <div className="text-center"><p>Copyright &copy; <a href="https://itsankur.tech" target="_blank" style={font}>Ankur</a></p></div>
+            <div className="text-center"><p>For code, visit github repo <a href="https://github.com/ankur12-1610/Todo-react/"><FaGithub color="#53b3cb"/></a></p></div>
+            <div className="text-center"><p>Copyright &copy; <a href="https://itsankur.tech/"  style={font}>Ankur</a></p></div>
         </footer>
     )
 }
