@@ -42,6 +42,7 @@ function App() {
       title: title,
       desc: desc,
     };
+    
     setTodos([...todos, myTodo]);
     console.log(myTodo);
   };
@@ -50,10 +51,11 @@ function App() {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
+
   return (
     <>
       <Router>
-      <Header title="Todos List" serchBar={true} />
+      <Header title="Todos List"  />
       <Switch>
       <Route exact path="/" render= {() => {
         return(

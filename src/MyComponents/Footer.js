@@ -5,16 +5,17 @@ import {FaHeart} from "react-icons/fa";
 
 
 
+
 export const Footer = () =>  {
 let footerStyle = {
     positon: "relative",
-    bottom: "0",
+    margin: "23vh 0px 0px 0px"
 }
 let font = {
     color: "#53b3cb",
 }
     return (
-        <footer className="bg-dark text-light py-3" style={footerStyle}>
+        <footer className="bg-dark sticky-bottom text-light py-3 " style={footerStyle}>
             <div>
             {/* <p className="text-center">
             Copyright &copy; Ankur
