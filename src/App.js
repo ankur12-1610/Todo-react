@@ -3,6 +3,7 @@ import "./Group.png"
 import Header from "./MyComponents/Header";
 import { Todos } from "./MyComponents/Todos";
 import { Footer } from "./MyComponents/Footer";
+import { FooterA } from "./MyComponents/FooterA";
 import { AddTodo } from "./MyComponents/AddTodo";
 import { About } from "./MyComponents/About";
 import React, { useState, useEffect } from 'react';
@@ -53,7 +54,8 @@ function App() {
 
 
   return (
-    <>
+     <>
+    
       <Router>
       <Header title="Todos List"  />
       <Switch>
@@ -64,14 +66,15 @@ function App() {
               <AddTodo addTodo={addTodo} />
               <Todos todos={todos} onDelete={onDelete} />
             </div>
+            <Footer />
             </>)
       }}>
           </Route>
           <Route exact path="/About">
             <About />
+            <FooterA />
           </Route>
         </Switch>
-      <Footer />
       </Router>
     </>
   );
