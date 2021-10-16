@@ -1,11 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-
 export default function Header(props) {
-
-    return (
+  return (
     //   <nav className="navbar navbar-dark bg-dark">
     //    <div className="container-fluid">
     //      <Link className="navbar-brand" to="/">{props.title}</Link>
@@ -24,22 +22,28 @@ export default function Header(props) {
     //        </form>: <div style={color}>Oohh shoot!!!</div>}
     //      </div>
     //    </div>
-    //  </nav> 
-<nav className="navbar navbar-dark bg-dark">
-  <div className="container-fluid">
-    <Link className="navbar-brand" to="/">{props.title}</Link>
-    <div className="d-flex">
-     <Link to="/About"><button className="btn btn-outline-light" type="button">About</button></Link>
-    </div>
-  </div>
-</nav>
-    )
+    //  </nav>
+    <nav className="navbar navbar-dark bg-dark">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+          {props.title}
+        </Link>
+        <div className="d-flex">
+          <Link to="/About">
+            <button className="btn btn-outline-light" type="button">
+              About
+            </button>
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
 }
 Header.defaultProps = {
   title: "Enter you title :|",
   // searchBar: true,
-}
+};
 Header.propTypes = {
   title: PropTypes.string,
   // searchBar: PropTypes.bool.isRequired,
-}
+};
