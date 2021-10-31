@@ -45,7 +45,7 @@ export const AddTodo = ({ addTodo }) => {
             </div>
             <div className="mb-3">
               <label htmlFor="desc" className="form-label">
-                Todo Decsription
+                Todo Description
               </label>
               <input
                 value={desc}

@@ -12,7 +12,7 @@ export const About = () => {
       <figure className="text-center" style={aboutStyle}>
         <div>
           <h2>
-            Hi, I'm Ankur <FaAngellist />
+            Hi, I&apos;m Ankur <FaAngellist />
           </h2>
           <p>
             {" "}
