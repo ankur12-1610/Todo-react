@@ -9,7 +9,15 @@ export const Todos = (props) => {
   };
   return (
     <div className="container" style={myStyle}>
-      <h4 className="my-3">Todos List</h4>
+      <div className="row">
+        <div className="col">
+          <h4 className="my-3">Todos List</h4>
+        </div>
+        <div className="col" style={{ textAlign: "right" }}>
+          <h4 className="my-3">{props.todos.length}</h4>
+        </div>
+      </div>
+
       <hr></hr>
       {props.todos.length === 0
         ? "No todos to display"
